@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "precache-manifest.dda767458058614c0dcf96ec1c20d020.js"
+  "precache-manifest.52aa3cc6f77f60968a702d5efe9aa6ac.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "meowtime"});
