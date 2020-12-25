@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge,chrome=1" />
+    <meta name="renderer"
+          content="webkit" />
+    <meta name="description"
+          content="" />
+    <meta name="keyword"
+          content="" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, shrink-to-fit=no, viewport-fit=cover" />
+    <meta name="author"
+          content="DCanmera" />
+
+    <title>视觉500px摄影师社区 - 全球摄影师作品分享交流平台</title>
+    <!-- 模仿网址：https://500px.com.cn/ -->
+
+    <!-- 引入 Bootstrap核心CSS文件(写在前面) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+    <link rel="stylesheet"
+          href="css/minreset.css">
+    <link rel="stylesheet"
+          href="css/index.css">
+  </head>
+
+  <body>
+    <div class="box">
+      <div class="nav">
+        <div class="nav_left">
+          <ul>
+            <li>500px</li>
+            <li><span>作品</span>
+              <!-- lyphicons 字体图标 别的地方要收费的 但是允许bootstrap免费使用 -->
+              <span class="glyphicon glyphicon-chevron-down"></span>
+              <!-- 新增下拉菜单-1 -->
+              <div>
+                <ul>
+                  <li class="active">热门</li>
+                  <li>排名上升</li>
+                  <li>新作</li>
+                  <li>编辑推荐</li>
+                  <li>影集</li>
+                  <li>图文</li>
+                </ul>
+              </div>
+            </li>
+            <li>活动</li>
+            <li><span>摄影师</span>
+              <span class="glyphicon glyphicon-chevron-down"></span>
+              <!-- 新增下拉菜单-2-->
+              <div>
+                <ul>
+                  <li class="active">推荐摄影师</li>
+                  <li>推荐部落</li>
+                  <li>推荐点评人</li>
+                </ul>
+              </div>
+            </li>
+            <li>版权</li>
+            <li>商城</li>
+          </ul>
+        </div>
+        <div class="nav_right">
+          <div class="nav_right_position">
+            <span>登录</span>
+            <span>注册</span>
+          </div>
+        </div>
+      </div>
+      <div class="banner">
+        <!-- 给类名为carousel的标签 就是在data-ride后面加上一个属性data-interval=“millisecond”，其中，millisecond为需要设置的毫秒数  -->
+        <div id="carousel-example-generic"
+             class="carousel slide"
+             data-ride="carousel">
+          <!-- Indicators 指示器 轮播图下对应的小圆点 -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic"
+                data-slide-to="0"
+                class="active"></li>
+            <li data-target="#carousel-example-generic"
+                data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic"
+                data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic"
+                data-slide-to="3"></li>
+            <li data-target="#carousel-example-generic"
+                data-slide-to="4"></li>
+            <li data-target="#carousel-example-generic"
+                data-slide-to="5"></li>
+            <li data-target="#carousel-example-generic"
+                data-slide-to="6"></li>
+            <li data-target="#carousel-example-generic"
+                data-slide-to="7"></li>
+            <li data-target="#carousel-example-generic"
+                data-slide-to="8"></li>
+            <li data-target="#carousel-example-generic"
+                data-slide-to="9"></li>
+          </ol>
+
+          <!-- Wrapper for slides  轮播图片 -->
+          <div class="carousel-inner"
+               role="listbox">
+            <div class="item active">
+              <img src="./images/banner/banner1.jpg"
+                   alt="...">
+              <div class="carousel-caption">
+                <h2>让美好触手可及！</h2>
+                <span>500px</span>
+              </div>
+            </div>
+            <div class="item">
+              <img src="./images/banner/banner2.jpg"
+                   alt="...">
+              <div class="carousel-caption">
+                <h2>让美好触手可及！</h2>
+                <span>500px</span>
+              </div>
+            </div>
+            <div class="item">
+              <img src="./images/banner/banner3.jpg"
+                   alt="...">
+              <div class="carousel-caption">
+                <h2>让美好触手可及！</h2>
+                <span>500px</span>
+              </div>
+            </div>
+            <div class="item">
+              <img src="./images/banner/banner4.jpg"
+                   alt="...">
+              <div class="carousel-caption">
+                <h2>让美好触手可及！</h2>
+                <span>500px</span>
+              </div>
+            </div>
+            <div class="item">
+              <img src="./images/banner/banner5.jpg"
+                   alt="...">
+              <div class="carousel-caption">
+                <h2>让美好触手可及！</h2>
+                <span>500px</span>
+              </div>
+            </div>
+            <div class="item">
+              <img src="./images/banner/banner6.jpg"
+                   alt="...">
+              <div class="carousel-caption">
+                <h2>让美好触手可及！</h2>
+                <span>500px</span>
+              </div>
+            </div>
+            <div class="item">
+              <img src="./images/banner/banner7.jpg"
+                   alt="...">
+              <div class="carousel-caption">
+                <h2>让美好触手可及！</h2>
+                <span>500px</span>
+              </div>
+            </div>
+            <div class="item">
+              <img src="./images/banner/banner8.jpg"
+                   alt="...">
+              <div class="carousel-caption">
+                <h2>让美好触手可及！</h2>
+                <span>500px</span>
+              </div>
+            </div>
+            <div class="item">
+              <img src="./images/banner/banner9.jpg"
+                   alt="...">
+              <div class="carousel-caption">
+                <h2>让美好触手可及！</h2>
+                <span>500px</span>
+              </div>
+            </div>
+            <div class="item">
+              <img src="./images/banner/banner10.jpg"
+                   alt="...">
+              <div class="carousel-caption">
+                <h2>让美好触手可及！</h2>
+                <span>500px</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 左右控制按钮 -->
+          <a class="left carousel-control"
+             href="#carousel-example-generic"
+             role="button"
+             data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"
+                  aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control"
+             href="#carousel-example-generic"
+             role="button"
+             data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"
+                  aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 四个svg图片系列 -->
+    <div class="show_icon">
+      <ul>
+        <li>
+          <div><img src="images/svg/search.svg"
+                 alt=""></div>
+          <span>发现</span>
+          <span>他人镜头中的奇观</span>
+          <span>发现美图</span>
+        </li>
+        <li>
+          <div><img src="images/svg/person.svg"
+                 alt=""></div>
+          <span>部落</span>
+          <span>以图会友，相互交流</span>
+          <span>加入部落</span>
+        </li>
+        <li>
+          <div><img src="images/svg/cup.svg"
+                 alt=""></div>
+          <span>活动</span>
+          <span>精彩内容，不容错过</span>
+          <span>参加活动</span>
+        </li>
+        <li>
+          <div><img src="images/svg/money.svg"
+                 alt=""></div>
+          <span>售图</span>
+          <span>好照片能赚钱</span>
+          <span>申请签约</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 发现精彩图像 尽在国际化摄影社区|community -->
+    <div class="community">
+      <div class="community_title">
+        <h2>发现精彩图像 尽在国际化摄影社区</h2>
+      </div>
+      <div class="community_text">
+        <ul>
+          <li><a href="javascript:(void);"
+               class="active">热门</a></li>
+          <li><a href="javascript:(void);">推荐</a></li>
+          <li><a href="javascript:(void);">组图</a></li>
+          <li><a href="javascript:(void);">图文</a></li>
+        </ul>
+      </div>
+      <div class="community_content">
+        <ul class="content_top">
+          <li><img src="./images/hot/1.jpg"
+                 alt=""></li>
+          <li><img src="./images/hot/2.png"
+                 alt=""></li>
+          <li><img src="./images/hot/3.png"
+                 alt=""></li>
+        </ul>
+        <ul class="content_center">
+          <li><img src="./images/hot/4.jpg"
+                 alt=""></li>
+          <li><img src="./images/hot/5.jpg"
+                 alt=""></li>
+          <li><img src="./images/hot/6.jpg"
+                 alt=""></li>
+        </ul>
+        <ul class="content_bottom">
+          <li><img src="./images/hot/7.jpg"
+                 alt=""></li>
+          <li><img src="./images/hot/8.jpg"
+                 alt=""></li>
+          <!-- <li><img src="./images/hot/9.png" alt=""></li> -->
+        </ul>
+      </div>
+    </div>
+
+    <!-- 丰富多元活动 尽享神秘大礼 -->
+    <div class="activities">
+      <h2>丰富多元活动 尽享神秘大礼</h2>
+      <div class="activities_items">
+        <div class="items_left">
+          <img src="images/hot/1.jpg"
+               alt="">
+        </div>
+        <div class="items_right">
+          <img src="images/hot/2.png"
+               alt="">
+        </div>
+      </div>
+    </div>
+
+    <!-- 加入部落，以图会友 -->
+    <div class="join">
+      <h2>加入部落，以图会友</h2>
+      <div class="join_items">
+        <ul>
+          <li>
+            <div class="items_top">
+              <div>
+                <span><img src="images/join/part1-1.png"
+                       alt=""></span>
+              </div>
+              <div>
+                <span>500px认证自媒体人部落</span>
+                <p>500px官方认证自媒体人部落，只生产优质内容。凝视世界，传达深刻，拒绝平庸。我们，诠释顶级。
+                  本部落为邀请制，不接受申请。</p>
+                <ul>
+                  <li>成员 <span>51</span> </li>
+                  <li>作品 <span>7020</span> </li>
+                  <li>活动 <span>0</span> </li>
+                </ul>
+              </div>
+            </div>
+            <div class="items_bottom">
+              <div class="bottom_left">
+                <img src="images/join/part1-2.jpg"
+                     alt="">
+              </div>
+              <div class="bottom_right">
+                <ul>
+                  <li><img src="images/join/part1-3.jpg"
+                         alt=""></li>
+                  <li><img src="images/join/part1-4.jpg"
+                         alt=""></li>
+                  <li><img src="images/join/part1-5.jpg"
+                         alt=""></li>
+                  <li><img src="images/join/part1-6.jpg"
+                         alt=""></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="items_top">
+              <div>
+                <span><img src="images/join/part2-1.jpg"
+                       alt=""></span>
+              </div>
+              <div>
+                <span>C客光影联盟</span>
+                <p>始于摄影，但不止于摄影。</p>
+                <ul>
+                  <li>成员 <span>610</span> </li>
+                  <li>作品 <span>9532</span> </li>
+                  <li>活动 <span>1</span> </li>
+                </ul>
+              </div>
+            </div>
+            <div class="items_bottom">
+              <div class="bottom_left">
+                <img src="images/join/part2-2.jpg"
+                     alt="">
+              </div>
+              <div class="bottom_right">
+                <ul>
+                  <li><img src="images/join/part2-3.jpg"
+                         alt=""></li>
+                  <li><img src="images/join/part2-4.jpg"
+                         alt=""></li>
+                  <li><img src="images/join/part2-5.jpg"
+                         alt=""></li>
+                  <li><img src="images/join/part2-6.jpg"
+                         alt=""></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="items_top">
+              <div>
+                <span><img src="images/join/part3-1.jpg"
+                       alt=""></span>
+              </div>
+              <div>
+                <span>中国爬楼联盟</span>
+                <p>视觉中国&500px.me官方认证城市风光摄影部落，中国著名城市摄影社群。</p>
+                <ul>
+                  <li>成员 <span>12664</span> </li>
+                  <li>作品 <span>200741</span> </li>
+                  <li>活动 <span>6</span> </li>
+                </ul>
+              </div>
+            </div>
+            <div class="items_bottom">
+              <div class="bottom_left">
+                <img src="images/join/part3-2.jpg"
+                     alt="">
+              </div>
+              <div class="bottom_right">
+                <ul>
+                  <li><img src="images/join/part3-3.jpg"
+                         alt=""></li>
+                  <li><img src="images/join/part3-4.jpg"
+                         alt=""></li>
+                  <li><img src="images/join/part3-5.jpg"
+                         alt=""></li>
+                  <li><img src="images/join/part3-6.jpg"
+                         alt=""></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 与优秀摄影师共驻，交流学习成长 -->
+    <div class="study">
+      <h2>与优秀摄影师共驻，交流学习成长</h2>
+      <div>
+        <ul>
+          <li>
+            <div><img src="images/singer/1.jpg"
+                   alt=""></div>
+            <p>薛之谦</p>
+            <p>粉丝 8729939</p>
+          </li>
+          <li>
+            <div><img src="images/singer/2.jpg"
+                   alt=""></div>
+            <p>毛不易</p>
+            <p>粉丝 8729999</p>
+          </li>
+          <li>
+            <div><img src="images/singer/3.jpg"
+                   alt=""></div>
+            <p>华晨宇</p>
+            <p>粉丝 8722999</p>
+          </li>
+          <li>
+            <div><img src="images/singer/4.jpg"
+                   alt=""></div>
+            <p>周 深</p>
+            <p>粉丝 8721999</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 让精彩无处不在 -->
+    <div class="wonderful">
+      <div class="wonderful_box">
+        <div class="wonderful_left">
+          <img src="images/wonderful/phone.png"
+               alt="">
+        </div>
+        <div class="wonderful_right">
+          <h1>让精彩无处不在</h1>
+          <p>
+            视觉中国摄影社区500px现已登录苹果商店，让我们一起分享照片，发现美图，与全球的摄影人进行交 流，创建自己的摄影空间。
+          </p>
+          <ul class="erweima">
+            <li><img src="./images/wonderful/ios.png"
+                   alt=""></li>
+            <li><img src="./images/wonderful/android.png"
+                   alt=""></li>
+          </ul>
+          <ul class="logo">
+            <li><img src="https://pic.500px.me/images/index/app.svg "
+                   alt=""></li>
+            <li><img src="images/wonderful/android_logo.png"
+                   alt=""></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!--加入500px -->
+    <div class="welcome">
+      <div class="welcome_box">
+        <a href="javascript:void(0);">加入500px</a>
+        <p>有情链接 <span> > </span> </p>
+      </div>
+    </div>
+
+    <!-- 视觉中国500px摄影社区 -->
+    <div class="footer">
+      <div class="footer_box">
+        <div class="footer_left">
+          <h1>视觉中国500px摄影社区</h1>
+          <p class="desc">视觉中国500px摄影社区是一个致力于摄影分享、发现、售卖的专业平台，来自世界各地的摄影师是我们忠实的用户。让你与他人因图片相识，世界很大，我想看一看。</p>
+          <ul>
+            <li><a href="#">帮助中心</a></li>
+            <li><a href="#">服务协议</a></li>
+            <li><a href="#">联系我们</a></li>
+          </ul>
+          <div class="info">
+            <p>©常州五百像素网络科技有限公司. <a href="#">苏ICP备20016755号</a></p>
+            <p>
+              <img src="images/peg.png"
+                   alt="">
+              <span>苏公网安备 32041202001732号</span>
+            </p>
+          </div>
+        </div>
+        <div class="footer_right">
+          <ul>
+            <li>
+              <a><img src="./images/weixin.png"
+                     alt=""></a>
+              <span>微信公众号</span>
+            </li>
+            <li>
+              <a><img src="./images/weibo.png"
+                     alt=""></a>
+              <span>官方微博</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 引入Bootstrap核心JavaScript文件之前 先引入jQuery库 -->
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <!-- 引入Bootstrap核心JavaScript 文件 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+    <script>
+      // jquery的入口函数==> $(function(){}
+      $(function () {
+        // 方式2：重置图片切换时间  默认是2000ms = 2s
+        $('.carousel').carousel({
+          // interval: 2000   默认值
+          interval: 3000
+        })
+      })
+      // 参考网址：https://blog.csdn.net/astroskyi/article/details/82837787
+
+    </script>
+
+  </body>
+
+</html>

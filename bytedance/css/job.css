@@ -1,0 +1,576 @@
+@charset "UTF-8";
+
+/* 轮播图样式 */
+/* 轮播图start */
+.main_box {
+  position: relative;
+}
+
+.main_box .job_banner {
+  margin-bottom: 80px;
+}
+
+.job_banner .carousel-indicators {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+}
+
+.carousel-indicators li {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin: 0px 5px;
+}
+
+.job_banner .carousel-inner {
+  height: 416px;
+}
+
+.carousel-inner .carousel-item {
+  height: 416px;
+}
+
+.carousel-inner .carousel-item img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.job_banner .job_btn_left .carousel-control-prev,
+.job_banner .job_btn_right .carousel-control-next {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.job_banner .job_btn_left .carousel-control-prev {
+  left: 40px;
+}
+
+.job_banner .job_btn_right .carousel-control-next {
+  right: 40px;
+}
+
+.job_banner .job_btn_left,
+.job_banner .job_btn_right {
+  display: none;
+}
+
+.job_banner:hover .job_btn_left {
+  display: block;
+}
+
+.job_banner:hover .job_btn_right {
+  display: block;
+}
+
+/* 轮播图end */
+/* 搜索框start */
+.main_box .job_search {
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  top: 390px;
+  z-index: 999;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.job_search .search {
+  width: 806px;
+  height: 58px;
+  -webkit-box-shadow: 0 8px 24px 0 rgba(187, 191, 196, 0.2);
+  box-shadow: 0 8px 24px 0 rgba(187, 191, 196, 0.2);
+  border-radius: 40px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid transparent;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  line-height: 56px;
+  background: white;
+}
+
+.search .search_icon {
+  width: 60px;
+  height: 100%;
+  text-align: center;
+  line-height: 56px;
+  display: block;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: white;
+  border-radius: 40px;
+}
+
+.job_search .search #search_s {
+  min-width: 320px;
+  height: 100%;
+  border: none;
+  -webkit-box-flex: 6;
+  -ms-flex: 6;
+  flex: 6;
+  background: white;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.search .search_btn {
+  display: block;
+  width: 150px;
+  height: 100%;
+  text-align: center;
+  background: #3370ff;
+  float: right;
+  color: white;
+  font-size: 16px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  cursor: pointer;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: 1px solid #3370ff;
+  -webkit-box-shadow: 0px -1px 2px #3370ff;
+  box-shadow: 0px -1px 2px #3370ff;
+}
+
+.search .search_btn:hover {
+  opacity: 0.6;
+}
+
+.job_search .search:hover {
+  border: 1px solid #3370ff;
+}
+
+/* 搜索框end */
+/* 内容start */
+.main_box .job_content {
+  width: 1046px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.job_content .job_content_left {
+  width: 276px;
+  float: left;
+}
+
+.job_content_left .content_left_filter {
+  width: 276px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #eff1f1;
+  overflow: hidden;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 23px;
+}
+
+.content_left_filter .filter {
+  float: left;
+}
+
+.content_left_filter .clear {
+  float: right;
+  cursor: pointer;
+}
+
+.job_content .job_content_right {
+  float: left;
+  width: 740px;
+}
+
+/* 内容end */
+/* 职位类别start */
+.job_content .class_title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1f2329;
+  margin-bottom: 10px;
+}
+
+.job_content .classification {
+  overflow: hidden;
+  margin-bottom: 39px;
+}
+
+.classification .class_box .class_text {
+  width: 100%;
+  height: 38px;
+  float: left;
+}
+
+.class_box .class_text .class_icon {
+  width: 24px;
+  height: 38px;
+  display: block;
+  float: left;
+  position: relative;
+  text-align: center;
+}
+
+.class_text .class_icon .icon {
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 2px;
+  bottom: 0;
+  margin: auto;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.class_text .class_icon .icon:hover {
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  background: #f2f2f2;
+}
+
+.class_text .class_icon .icon:hover svg {
+  color: #3370ff;
+}
+
+.class_text .class_icon .icon svg {
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.class_text .class_checked #class_checked {
+  width: 16px;
+  height: 16px;
+  float: left;
+}
+
+.class_box .class_text .class_font {
+  font-size: 14px;
+  display: inline-block;
+  height: 38px;
+  line-height: 38px;
+}
+
+.class_box .class_text .class_two_tltle {
+  overflow: hidden;
+  width: 100%;
+  padding-left: 46px;
+}
+
+.class_text .class_two_tltle #two_checked {
+  width: 16px;
+  height: 16px;
+  margin: 10px 10px;
+  float: left;
+}
+
+.class_text .class_two_tltle .class_two_text {
+  display: block;
+  height: 38px;
+  font-size: 14px;
+  line-height: 38px;
+}
+
+.school_fication .recruitmentType {
+  margin-bottom: 50px;
+}
+
+.recruitmentType .recruitmentType_titile {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1f2329;
+  margin-bottom: 10px;
+}
+
+.recruitmentType_box ul li {
+  height: 38px;
+  line-height: 38px;
+  cursor: pointer;
+  position: relative;
+}
+
+.recruitmentType_box ul li .city_name {
+  font-size: 14px;
+}
+
+.recruitmentType_box ul li .title_right {
+  float: right;
+  height: 38px;
+  line-height: 0;
+}
+
+.recruitmentType_box ul li .title_right:hover .btn-primary {
+  color: #3370ff;
+}
+
+.recruitmentType_box ul li span .btn-primary {
+  color: black;
+  font-size: 14px;
+}
+
+.recruitmentType_box ul li span .btn-primary svg {
+  vertical-align: text-bottom;
+  width: 16px;
+  height: 16px;
+}
+
+.recruitmentType .recruitmentType_box .titlebox {
+  font-size: 13px;
+  color: black;
+  text-align: center;
+  background: white;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 10px 24px 0 rgba(187, 191, 196, 0.2);
+  box-shadow: 0 10px 24px 0 rgba(187, 191, 196, 0.2);
+  position: absolute;
+  top: -48px;
+  right: 0;
+  padding: 5px 15px;
+  z-index: 9;
+  display: none;
+  -webkit-transition: all .6s;
+  -o-transition: all .6s;
+  transition: all .6s;
+}
+
+.recruitmentType_box .titlebox.right {
+  right: -93px;
+}
+
+.recruitmentType_box .titlebox::after {
+  content: '';
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-top: 5px solid white;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  -webkit-box-shadow: 0 8px 24px 0 rgba(187, 191, 196, 0.2);
+  box-shadow: 0 8px 24px 0 rgba(187, 191, 196, 0.2);
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  -webkit-transform: translate(-50% -50%);
+  -ms-transform: translate(-50% -50%);
+  transform: translate(-50% -50%);
+}
+
+/* 职位类别end */
+/* 城市分类start */
+.job_content .class_city {
+  overflow: hidden;
+}
+
+.class_city .city_title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1f2329;
+  margin-bottom: 10px;
+}
+
+.job_content_left input[type='checkbox'] {
+  width: 16px;
+  height: 16px;
+  margin-top: 12px;
+  margin-right: 5px;
+  float: left;
+  cursor: pointer;
+  border: 1px solid #8f959e;
+  outline: none;
+}
+
+.job_content_left input[type='checkbox']:hover {
+  -webkit-box-shadow: 0 0 4px 0 rgba(78, 131, 253, 0.4);
+  box-shadow: 0 0 4px 0 rgba(78, 131, 253, 0.4);
+  border: 1px solid #3370ff;
+}
+
+.class_city .city_class .city .city_name {
+  font-size: 14px;
+  display: inline-block;
+  height: 38px;
+  line-height: 38px;
+}
+
+/* 城市分类end */
+/* 城市搜索框start */
+.job_content .city_search {
+  width: 250px;
+  overflow: hidden;
+  padding-bottom: 6px;
+  margin: 0 auto;
+  border-bottom: 1px solid #eff1f1;
+  position: relative;
+}
+
+.job_content .city_search::before {
+  content: '';
+  display: block;
+  width: 0px;
+  border-bottom: 1px solid #3370ff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.job_content .city_search:hover::before,
+.job_content .city_search.active::before {
+  width: 250px;
+  -webkit-transition: width 0.6s;
+  -o-transition: width 0.6s;
+  transition: width 0.6s;
+}
+
+.job_content .search_icon {
+  float: left;
+  display: block;
+  width: 20px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 14px;
+}
+
+.job_content .city_search_inp {
+  width: 200px;
+  float: left;
+}
+
+.job_content .city_search_inp #city_search {
+  width: 196px;
+  height: 30px;
+  margin: 0 10px;
+}
+
+/* 城市搜索框end */
+/* 页面右侧线条start */
+.job_content .job_content_right {
+  position: relative;
+}
+
+.job_content_right .content_solid {
+  position: absolute;
+  top: 0;
+  left: 40px;
+  height: 98%;
+  border-left: 1px solid #eff1f1;
+}
+
+/* 页面右侧线条end */
+/* 页面选项卡start */
+.job_content_right .content .content_p {
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #1f2329;
+  margin-bottom: 18px;
+  margin-left: 80px;
+  z-index: 999;
+}
+
+.job_content_right .content .card_box {
+  height: 100%;
+  padding: 15px 10px 0 70px;
+}
+
+.card_ss .card_link {
+  padding: 22px 16px 18px 16px;
+  -webkit-transition: -webkit-box-shadow 0.5s;
+  transition: -webkit-box-shadow 0.5s;
+  -o-transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
+  color: #1f2329;
+  width: 688px;
+  height: 150px;
+  overflow: hidden;
+  display: block;
+  margin-bottom: 20px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.card_ss .card_link:last-of-type {
+  margin-bottom: 0;
+}
+
+.card_ss .card_link:hover {
+  -webkit-box-shadow: 0 8px 24px 0 rgba(187, 191, 196, 0.2);
+  box-shadow: 0 8px 24px 0 rgba(187, 191, 196, 0.2);
+}
+
+.card_link .card_block {
+  overflow: hidden;
+}
+
+.card_block .card_title_text .card_text {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.card_link .card_block .card_title_introduction {
+  color: #646a73;
+  margin: 4px 0 12px;
+}
+
+.card_block .card_title_introduction .card_title_solid {
+  display: inline-block;
+  width: 1px;
+  height: 12px;
+  background-color: #bbbfc4;
+  margin: 0 8px;
+}
+
+.card_link .card_block .card_title_content {
+  color: #8f959e;
+  max-height: 44px;
+  font-size: 14px;
+  width: 664px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.57;
+  letter-spacing: normal;
+}
+
+.card_title_content p {
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.job_content .pageNumber {
+  float: right;
+  margin: 20px 0;
+}
+
+.pageNumber .page-item .page-link {
+  border: none;
+}
+
+/* 页面选项卡end */

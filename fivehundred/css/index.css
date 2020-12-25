@@ -1,0 +1,662 @@
+.box{
+	width:100%;
+	height: 590px;
+	position: relative;
+	cursor: pointer;     /*小手图标*/
+}
+/*头部的导航栏  start*/
+.box .nav{
+	width: 85%;
+	min-width: 1200px;  /*设置最小宽度值*/
+    height: 50px;
+    color:#fff;
+    font-size: 14px;
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    margin:auto;
+    z-index: 998;    /* 提高层级  显示在轮播图上方 z-index属性要跟浮动定位一起使用才有效  */ 
+}
+.nav .nav_left{
+	width: 70%;
+	height: 100%;
+	float: left;
+}
+.nav .nav_left>ul{
+	width: 100%;
+	height: 100%;
+}
+.nav .nav_left>ul>li{
+	float: left;
+	line-height: 50px;
+	padding:0 10px;
+	box-sizing:border-box;
+}
+.nav .nav_left>ul>li:nth-child(1){
+	font-size: 20px;
+	font-style: italic; /*斜体*/
+	position: relative;   
+}
+/*第1个下拉菜单 和 第2个下拉菜单*/
+.nav .nav_left>ul>li:nth-child(2)>div,
+.nav .nav_left>ul>li:nth-child(4)>div{
+	color:#000;
+	background: #fff;
+	position: absolute;
+	top:50px;           /*导航栏的高度值*/
+    display: none;     /*先隐藏起来*/
+}
+.nav .nav_left>ul>li:nth-child(2):hover div,
+.nav .nav_left>ul>li:nth-child(4):hover div{
+	display: block;  /*鼠标移入类名为nav_left的第2个和第4个li标签时 显示对应的下拉菜单*/
+}
+.nav .nav_left>ul>li:nth-child(2)>div ul,
+.nav .nav_left>ul>li:nth-child(4)>div ul{
+	position: relative;
+	width: 100px;
+	text-align: center;
+}
+.nav .nav_left>ul>li:nth-child(2)>div ul::before,   /*制作三角形*/
+.nav .nav_left>ul>li:nth-child(4)>div ul::before{   /*制作三角形*/
+	content:""; 
+	display: block;
+	width: 0;
+	height: 0;
+	border:10px solid transparent;
+	border-bottom-color:#fff;
+	position: absolute;
+	left:10px;
+	top:-20px;
+}   
+ /*符号为 逗号 , 表示并集选择器 表示共用一套css样式*/
+.nav .nav_left>ul>li:nth-child(2)>div ul li.active,     
+.nav .nav_left>ul>li:nth-child(2)>div ul li:hover,
+.nav .nav_left>ul>li:nth-child(4)>div ul li.active,     
+.nav .nav_left>ul>li:nth-child(4)>div ul li:hover{
+	background: blue;
+	color:#fff;
+}
+.nav .nav_left>ul>li:nth-child(2)>div ul li,
+.nav .nav_left>ul>li:nth-child(4)>div ul li{
+	line-height: 30px;
+	border-bottom:1px solid #ddd;
+}
+.nav .nav_right{
+	width: 30%;
+	height: 100%;
+	line-height: 50px;
+	float: right;
+}
+.nav .nav_right .nav_right_position{
+	float: right;
+}
+.nav .nav_right span{
+	padding:7px 10px;
+	background: red;
+	color:#fff;
+	border-radius: 10px;
+}
+/*头部的导航栏  end*/
+/*轮播图 start*/
+.box .banner{
+	width: 100%;
+	height: 590px;
+	position: absolute;
+	left: 0;
+	top:0;
+}
+.box .banner .carousel-inner{
+	width: 100%;
+	height: 590px;
+}
+.box .banner .carousel-inner>.item{
+	width: 100%;
+	height: 100%;
+}
+.box .banner .carousel-inner>.item img{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.box .banner .carousel-inner>.item>.carousel-caption{
+	width: 400px;
+	height: 200px;
+	position: absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	margin:auto;
+}
+.box .banner .carousel-inner>.item>.carousel-caption>h2{
+	margin:30px 0;
+}
+.box .banner .carousel-inner>.item>.carousel-caption>span{
+	padding:12px 22px;
+	background: rgb(0,20,255);
+	color:#fff;
+	border-radius: 5px;
+}
+/*轮播图 end*/
+
+/*四个svg图片系列  start*/
+.show_icon{
+    padding:50px 0;
+    cursor: pointer;
+    width: 100%;
+    min-width: 960px;
+}
+.show_icon ul{
+	width: 60%;
+	margin:0 auto;
+	overflow: hidden;  /*清除子级浮动*/
+}
+.show_icon ul li{
+	float: left;
+	width: 25%;
+}
+.show_icon ul li>div{
+	text-align: center;
+	margin: 10px 0;
+}
+.show_icon ul li>div>img{
+	width: 60px;
+	height: 60px;
+}
+.show_icon ul li span{
+	display: block;
+	text-align: center;
+    padding:15px 0;
+}
+.show_icon ul li span:nth-child(2){
+	font-size: 22px;
+}
+.show_icon ul li span:nth-child(4){
+	width: 100px;
+	border-radius: 10px;
+	border:1px solid blue;
+	margin:15px auto 30px;
+	color:rgb(0,0,255);
+	padding:10px 0; /*重置padding值*/
+}
+.show_icon ul li span:nth-child(4):hover{
+	background: #ddd;
+}
+/*四个图标系列  end*/
+
+/*community 摄影社区 start*/
+.community{
+	padding:10px 0 30px;
+}
+.community .community_title{
+	text-align: center;
+}
+.community .community_title>h3{
+	padding:30px 0;
+}
+.community .community_text{
+	width: 250px;
+	height: 45px;
+	margin:30px auto;
+}
+.community .community_text ul{
+	width: 100%;
+	line-height: 45px;
+	overflow: hidden;
+}
+.community .community_text ul li{
+	float: left;
+	width: 25%;
+	height: 100%;
+	text-align: center;
+	font-size: 20px;
+	padding:0 10px;
+	box-sizing:border-box;
+}
+.community .community_text ul li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.community .community_text ul li a.active{
+    color:red;
+    font-weight: bold;
+    border-bottom: 3px solid red;
+}
+.community .community_text ul li:hover a{
+	color:blue;
+    border-bottom: 3px solid blue;
+}
+.community .community_text ul li a:hover{
+	text-decoration: none;
+}
+.community .community_content{
+	width: 80%;
+	min-width: 1200px;
+	margin:10px auto;
+}
+.community .community_content ul{
+	margin-bottom:10px;
+	overflow: hidden;  /*清除子级浮动*/
+}
+.community .community_content  li{
+	float: left;
+	height: 300px;
+}
+.community .community_content img{
+	width: 100%;
+	height: 100%;
+}
+.community .community_content .content_top li:nth-child(1){
+	width: 30%;
+}
+.community .community_content .content_top li:nth-child(2){
+	width: 25%;
+	padding:0 10px;
+	box-sizing:border-box;
+}
+.community .community_content .content_top li:nth-child(3){
+	width: 45%;
+}
+.community .community_content .content_center li:nth-child(1){
+	width: 34%;
+}
+.community .community_content .content_center li:nth-child(2){
+	width: 32%;
+	padding:0 10px;
+	box-sizing:border-box;
+}
+.community .community_content .content_center li:nth-child(3){
+	width: 34%;
+}
+
+.community .community_content .content_bottom li:nth-child(1){
+	width: 70%;
+	padding-right:10px;
+	box-sizing:border-box;
+}
+.community .community_content .content_bottom li:nth-child(2){
+	width: 30%;
+}
+/*community 摄影社区 end*/
+
+/*activities  start*/
+.activities{
+	padding:30px 0 60px;
+	/*border:10px solid red;*/
+}
+.activities h2{
+	margin:50px 0;
+	text-align: center;
+}
+.activities .activities_items{
+	width: 80%;
+	min-width: 1200px;
+	margin:0 auto;
+	overflow: hidden;
+}
+.activities .activities_items img{
+	width: 100%;
+	height: 100%;
+}
+.activities .activities_items .items_left{
+	float: left;
+	width: 50%;
+	padding-right:10px;
+	box-sizing:border-box;
+}
+.activities .activities_items .items_right{
+	float: right;
+	width: 50%;
+	padding-left:10px;
+	box-sizing:border-box;
+}
+/*activities  end*/
+
+/*加入部落，以图会友 start*/
+.join{
+	width: 100%;
+	background: #ddd;
+	padding:10px 0 50px;
+}
+.join h2{
+	height: 150px;
+	line-height: 150px;
+	text-align: center;
+	font-weight: bold;
+}
+.join .join_items{
+	width: 80%;
+	min-width: 1200px;
+	margin:0 auto;
+}
+.join .join_items>ul::after{  /*清除同级浮动 */
+	content:"";
+	display: block;
+	clear:both;
+}
+.join .join_items>ul>li{
+	float:left;
+	width: 32%;
+	padding:10px 15px 40px;
+	box-sizing:border-box;
+	background: #fff;
+	margin:0 5px;
+}
+.join .join_items>ul>li>.items_top{
+	margin:30px 0;
+	overflow: hidden;
+}
+.join .join_items>ul>li>.items_top>div:nth-child(1){
+	float: left;
+	width: 30%;
+	height: 80px;
+}
+.join .join_items>ul>li>.items_top>div:nth-child(1)>span{
+	display: block;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	overflow: hidden;
+}
+.join .join_items>ul>li>.items_top>div:nth-child(1)>span>img{
+	width: 100%;
+	height: 100%;
+}
+.join .join_items>ul>li>.items_top>div:nth-child(2){
+	float: right;
+	width: 70%;
+}
+.join .join_items>ul>li>.items_top>div:nth-child(2)>span{
+	font-size: 17px;
+	font-weight: bold;
+	display: block;
+	line-height: 45px;
+}
+/* 一段文字 目标：单行溢出，且超出部分显示...或者截取。前提必须有宽度。*/
+.join .join_items>ul>li>.items_top>div:nth-child(2)>p{
+	width:100%;    
+	overflow: hidden;    
+	text-overflow:ellipsis;    
+	white-space: nowrap;
+}
+.join .join_items>ul>li>.items_top>div:nth-child(2)>ul{
+	
+}
+.join .join_items>ul>li>.items_top>div:nth-child(2)>ul li{
+	float: left;
+	width: 30%;
+	color:#b9b9dc;
+	font-size: 12px;
+}
+.join .join_items>ul>li>.items_bottom{
+	height: 176px; 
+}
+.join .join_items>ul>li>.items_bottom .bottom_left{
+	float: left;
+	width: 50%;
+	padding-right:4px;
+	box-sizing:border-box;
+}
+.join .join_items>ul>li>.items_bottom .bottom_left img{
+	width: 176px;
+	height: 176px;
+}
+.join .join_items>ul>li>.items_bottom .bottom_right{
+	float: right;
+	height: 100%;
+	width: 50%;
+}
+.join .join_items>ul>li>.items_bottom .bottom_right ul{
+	overflow: hidden;
+}
+.join .join_items>ul>li>.items_bottom .bottom_right ul li{
+	float: left;
+	height: 100%;  
+	/*84+84+4+4 = 176px 84px是小图片设置的高度值 4px是设置padding-top和padding-bottom的值*/
+	width: 50%;
+}
+.join .join_items>ul>li>.items_bottom .bottom_right ul li:nth-child(1){
+	padding-right:2px;
+	padding-bottom:4px;
+	box-sizing:border-box;
+}
+.join .join_items>ul>li>.items_bottom .bottom_right ul li:nth-child(2){
+	padding-left:2px;
+	padding-bottom:4px;
+	box-sizing:border-box;
+}
+.join .join_items>ul>li>.items_bottom .bottom_right ul li:nth-child(3){
+	padding-right:2px;
+	padding-top:4px;
+	box-sizing:border-box;
+}
+.join .join_items>ul>li>.items_bottom .bottom_right ul li:nth-child(4){
+	padding-left:2px;
+	padding-top:4px;
+	box-sizing:border-box;
+}
+.join .join_items>ul>li>.items_bottom .bottom_right ul li img{
+	width: 84px;
+	height: 84px;  
+}
+/*加入部落，以图会友 end*/
+
+/*与优秀摄影师共驻，交流学习成长*/
+.study{
+	padding-top:50px;
+	background: #fff;
+}
+.study h2{
+	text-align: center;
+	font-weight: bold;
+}
+.study>div{
+	width: 80%;
+	min-width: 1200px;
+	margin:50px auto;
+}
+.study>div ul{
+	overflow: hidden;
+}
+.study>div ul li{
+	float: left;
+	width: 25%;
+	text-align: center;
+}
+.study>div ul li>div{
+	width: 160px;
+	height: 160px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin:25px auto;   /*图片水平居中*/
+}
+.study>div ul li>div img{
+	width: 100%;
+	height: 100%;
+}
+.study>div ul li p:nth-child(2){
+	font-weight: bold;
+	font-size: 25px;
+}
+.study>div ul li p:nth-child(3){
+	font-size: 20px;
+	color:#666;
+}
+
+/*让精彩无处不在*/
+.wonderful{
+   padding:30px 0;
+   background: #ddd;
+}
+.wonderful .wonderful_box{
+	width: 65%;
+	min-width: 920px;
+	margin:50px auto;
+	overflow: hidden;
+}
+.wonderful .wonderful_left{
+	float: left;
+	width: 45%;
+	height: 550px;
+	position: relative;
+}
+.wonderful .wonderful_left img{
+	width: 250px;
+	height: 550px;
+	position: absolute;  /*图片居中*/
+	left:50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+}
+.wonderful .wonderful_right{
+	float: right;
+	width: 55%;
+	height: 100%;
+	padding:40px 60px;
+}
+.wonderful .wonderful_right h1{
+	margin: 25px 0;
+}
+.wonderful .wonderful_right p{
+	margin:20px auto;
+	font-size: 20px;
+	color:#667;
+}
+.wonderful .wonderful_right .erweima{
+	overflow: hidden;
+	margin:40px 0;
+}
+.wonderful .wonderful_right .erweima  li{
+	float: left;
+	width: 50%;
+}
+.wonderful .wonderful_right .erweima  li img{
+	width: 130px;
+	height: 130px;
+}
+.wonderful .wonderful_right .logo{
+	overflow: hidden;
+}
+.wonderful .wonderful_right .logo li{
+	float: left;
+	width: 50%;
+}
+.wonderful .wonderful_right .logo li{}
+.wonderful .wonderful_right .logo li img{
+	width: 135px;
+	height: 35px;
+}
+
+/*加入500px*/
+.welcome{
+	height: 255px;
+	background: #fff;
+}
+.welcome .welcome_box{
+	width: 80%;
+	height: 100%;
+	min-width: 1200px;
+	margin:0 auto;
+	position: relative;
+}
+.welcome a{
+	display: block;
+	width: 480px;
+	height: 50px;
+	line-height: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+	background: #0099e5;
+	color:#fff;
+	border-radius: 10px;
+
+	position: absolute;
+	left:0;
+	right:0;
+	top:50px;
+	margin:auto;
+}
+.welcome p{
+	position: absolute;
+	left:0;
+	bottom:50px;
+	font-size: 20px;
+}
+
+/*视觉中国500px摄影社区*/
+.footer{
+	background: #ccc;
+}
+.footer .footer_box{
+	width: 80%;
+	min-width: 1200px;
+	margin:0px auto;
+	padding:50px 0;
+	overflow: hidden;
+}
+.footer .footer_left{
+	float: left;
+	width: 75%;
+	padding-right:40px;
+	box-sizing:border-box;
+}
+.footer .footer_left h1{
+	font-size: 28px;
+	font-weight: bold;
+	margin:20px 0;
+}
+.footer .footer_left .desc{
+	font-size: 17px;
+}
+.footer .footer_left ul{
+	width: 30%;
+	overflow: hidden;
+	margin:10px 0;
+}
+.footer .footer_left ul li{
+	float: left;
+	width:26%;
+	margin-right:10px;
+	border-right:2px solid red;
+}
+.footer .footer_left ul li:nth-child(3){
+	border-right:none;
+}
+.footer .footer_left .info p{
+	display: inline-block;
+	margin:0 0 10px;
+}
+.footer .footer_left .info a{
+	color:#666;
+	text-decoration: underline;
+	margin-right:20px;
+}
+.footer .footer_right{
+	float: right;
+	width: 25%;
+}
+.footer .footer_right ul{
+	overflow: hidden;
+}
+.footer .footer_right ul li{
+	float: left;
+	width: 50%;
+}
+.footer .footer_right ul li a{
+	display: block;
+	width: 111px;
+	height: 111px;
+	margin:20px auto;
+}
+.footer .footer_right ul li span{
+	display: block;
+	text-align: center;
+	padding:10px 0;
+}
+.footer .footer_right img{
+	width: 111px;
+	height: 111px;
+}

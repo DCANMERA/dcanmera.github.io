@@ -1,0 +1,1017 @@
+@charset "UTF-8";
+
+.content {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.content .content-video {
+  width: 100%;
+  height: 416px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  background: #eff4ff;
+}
+
+.content-video .video-word {
+  width: 300px;
+  height: 190px;
+  position: absolute;
+  top: 125px;
+  left: 50%;
+  margin-left: -150px;
+  cursor: pointer;
+  color: white;
+  text-align: center;
+}
+
+.content-video .video-word .word1 {
+  height: 56px;
+  margin-bottom: 12px;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 56px;
+  text-shadow: 0 0 12px rgba(0, 32, 80, 0.2);
+}
+
+.content-video .video-word .word2 {
+  height: 38px;
+  margin-bottom: 53px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  text-shadow: 0 0 12px rgba(0, 32, 80, 0.2);
+}
+
+.content-video .video-word svg {
+  width: 32px;
+  height: 32px;
+}
+
+.content-video .video-word .word3 {
+  height: 32px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  text-shadow: 0 0 12px rgba(0, 32, 80, 0.2);
+}
+
+.content .life1 {
+  height: 548px;
+  padding-top: 145px;
+  padding-bottom: 124px;
+  background-color: #fafafb;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  position: relative;
+}
+
+.life1 .svg1 {
+  color: #e3ecf3;
+  position: absolute;
+  top: -33px;
+  left: -79px;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.life1 .svg2 {
+  color: #f5e9d7;
+  position: absolute;
+  top: 49px;
+  right: -38px;
+}
+
+.life1 .life-content {
+  width: 1200px;
+  height: 548px;
+  margin: 0 auto;
+}
+
+.life1 .word {
+  width: 462px;
+  height: 548px;
+  float: left;
+}
+
+.life1 .word .english {
+  height: 16px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 6px;
+  color: #000;
+  position: relative;
+}
+
+.life1 .word .english span {
+  width: 32px;
+  height: 32px;
+  background-color: #e67143;
+  border-radius: 50%;
+  position: absolute;
+  top: -8px;
+  left: -16px;
+  opacity: 0.5;
+}
+
+.life1 .word .title1 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 30px;
+  color: #1f2329;
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+
+.life1 .word .text1 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #646a73;
+}
+
+.life1 .word .title2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 32px;
+  margin-bottom: 8px;
+  color: #1f2329;
+}
+
+.life1 .word .text2 {
+  font-size: 14px;
+  line-height: 28px;
+  color: #646a73;
+  margin-top: 8px;
+}
+
+.life1 .word .title3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 32px;
+  margin-bottom: 8px;
+  color: #1f2329;
+}
+
+.life1 .word .text3 {
+  font-size: 14px;
+  line-height: 28px;
+  color: #646a73;
+  margin-top: 8px;
+}
+
+.life1 .word .title4 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 32px;
+  margin-bottom: 8px;
+  color: #1f2329;
+}
+
+.life1 .word .text4 {
+  font-size: 14px;
+  line-height: 28px;
+  color: #646a73;
+  margin-top: 8px;
+}
+
+.life1 .word .title5 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 32px;
+  margin-bottom: 8px;
+  color: #1f2329;
+}
+
+.life1 .word .text5 {
+  font-size: 14px;
+  line-height: 28px;
+  color: #646a73;
+  margin-top: 8px;
+}
+
+.life1 .photo {
+  width: 600px;
+  height: 526px;
+  background-image: url(../images/bytsDance-img/work-environment-1.jpg);
+  background-size: 100% 100%;
+  float: right;
+  margin-top: 11px;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-animation: loop 8s linear infinite;
+  animation: loop 8s linear infinite;
+}
+
+.life1 .photo li {
+  width: 600px;
+  height: 526px;
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+.life1 .photo li:nth-child(1) {
+  background-image: url(../images/bytsDance-img/work-environment-1.jpg);
+  background-size: 100% 100%;
+}
+
+.life1 .photo li:nth-child(2) {
+  background-image: url(../images/bytsDance-img/work-environment-2.jpg);
+  background-size: 100% 100%;
+}
+
+.life1 .photo .active {
+  z-index: 6;
+  opacity: 1;
+}
+
+.content .life2 {
+  height: 675px;
+  padding-top: 87px;
+  padding-bottom: 80px;
+  background-color: #f4f7f9;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  position: relative;
+}
+
+.life2 .svg3 {
+  color: #e3ecf3;
+  position: absolute;
+  top: -37px;
+  left: 334px;
+}
+
+.life2 .life-content {
+  width: 1200px;
+  height: 675px;
+  margin: 0 auto;
+}
+
+.life2 .word {
+  width: 462px;
+  height: 675px;
+  float: right;
+}
+
+.life2 .word .english {
+  height: 16px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 6px;
+  color: #000;
+  position: relative;
+}
+
+.life2 .word .english span {
+  width: 32px;
+  height: 32px;
+  background-color: #aeb2ec;
+  border-radius: 50%;
+  position: absolute;
+  top: -7px;
+  left: -16px;
+  opacity: 0.5;
+}
+
+.life2 .word .title1 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 30px;
+  color: #1f2329;
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+
+.life2 .word .text1 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #646a73;
+}
+
+.life2 .word .title2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 32px;
+  margin-bottom: 8px;
+  color: #1f2329;
+}
+
+.life2 .word .text2 {
+  font-size: 14px;
+  line-height: 28px;
+  color: #646a73;
+  margin-top: 8px;
+}
+
+.life2 .word .title3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 32px;
+  margin-bottom: 8px;
+  color: #1f2329;
+}
+
+.life2 .word .text3 {
+  font-size: 14px;
+  line-height: 28px;
+  color: #646a73;
+  margin-top: 8px;
+}
+
+.life2 .word .title4 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 32px;
+  margin-bottom: 8px;
+  color: #1f2329;
+}
+
+.life2 .word .text4 {
+  font-size: 14px;
+  line-height: 28px;
+  color: #646a73;
+  margin-top: 8px;
+}
+
+.life2 .word .title5 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 32px;
+  margin-bottom: 8px;
+  color: #1f2329;
+}
+
+.life2 .word .text5 {
+  font-size: 14px;
+  line-height: 28px;
+  color: #646a73;
+  margin-top: 8px;
+}
+
+.life2 .photo {
+  width: 600px;
+  height: 526px;
+  background-image: url(../images/bytsDance-img/new-growth-1.jpg);
+  background-size: 100% 100%;
+  float: left;
+  margin-top: 56px;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-animation: loop 8s linear infinite;
+  animation: loop 8s linear infinite;
+}
+
+.life2 .photo li {
+  width: 642px;
+  height: 563px;
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+.life2 .photo li:nth-child(1) {
+  background-image: url(../images/bytsDance-img/new-growth-1.jpg);
+  background-size: 100% 100%;
+}
+
+.life2 .photo li:nth-child(2) {
+  background-image: url(../images/bytsDance-img/new-growth-2.jpg);
+  background-size: 100% 100%;
+}
+
+.life2 .photo .active {
+  z-index: 6;
+  opacity: 1;
+}
+
+.content .life3 {
+  height: 675px;
+  padding-top: 87px;
+  padding-bottom: 80px;
+  background-color: #fcfcfc;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  position: relative;
+}
+
+.life3 .svg4 {
+  color: #f5e9d7;
+  position: absolute;
+  top: 518px;
+  left: -94px;
+}
+
+.life3 .life-content {
+  width: 1200px;
+  height: 675px;
+  margin: 0 auto;
+}
+
+.life3 .word {
+  width: 462px;
+  height: 675px;
+  float: left;
+}
+
+.life3 .word .english {
+  height: 16px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 6px;
+  color: #000;
+  position: relative;
+}
+
+.life3 .word .english span {
+  width: 32px;
+  height: 32px;
+  background-color: #c060bb;
+  border-radius: 50%;
+  position: absolute;
+  top: -7px;
+  left: -16px;
+  opacity: 0.5;
+}
+
+.life3 .word .title1 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 30px;
+  color: #1f2329;
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+
+.life3 .word .text1 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #646a73;
+}
+
+.life3 .word .title2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 32px;
+  margin-bottom: 8px;
+  color: #1f2329;
+}
+
+.life3 .word .text2 {
+  font-size: 14px;
+  line-height: 28px;
+  color: #646a73;
+  margin-top: 8px;
+}
+
+.life3 .word .title3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 32px;
+  margin-bottom: 8px;
+  color: #1f2329;
+}
+
+.life3 .word .text3 {
+  font-size: 14px;
+  line-height: 28px;
+  color: #646a73;
+  margin-top: 8px;
+}
+
+.life3 .word .title4 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 32px;
+  margin-bottom: 8px;
+  color: #1f2329;
+}
+
+.life3 .word .text4 {
+  font-size: 14px;
+  line-height: 28px;
+  color: #646a73;
+  margin-top: 8px;
+}
+
+.life3 .word .title5 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 32px;
+  margin-bottom: 8px;
+  color: #1f2329;
+}
+
+.life3 .word .text5 {
+  font-size: 14px;
+  line-height: 28px;
+  color: #646a73;
+  margin-top: 8px;
+}
+
+.life3 .photo {
+  width: 600px;
+  height: 526px;
+  background-image: url(../images/bytsDance-img/welfare-concern-1.jpg);
+  background-size: 100% 100%;
+  float: right;
+  margin-top: 56px;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-animation: loop 8s linear infinite;
+  animation: loop 8s linear infinite;
+}
+
+.life3 .photo li {
+  width: 642px;
+  height: 563px;
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+.life3 .photo li:nth-child(1) {
+  background-image: url(../images/bytsDance-img/welfare-concern-1.jpg);
+  background-size: 100% 100%;
+}
+
+.life3 .photo li:nth-child(2) {
+  background-image: url(../images/bytsDance-img/welfare-concern-2.jpg);
+  background-size: 100% 100%;
+}
+
+.life3 .photo .active {
+  z-index: 6;
+  opacity: 1;
+}
+
+.content .life4 {
+  height: 438px;
+  padding-top: 106px;
+  padding-bottom: 100px;
+  background-color: #f8fcff;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  position: relative;
+}
+
+.life4 .life-content {
+  width: 1200px;
+  height: 438px;
+  margin: 0 auto;
+}
+
+.life4 .word {
+  width: 462px;
+  height: 438px;
+  float: right;
+}
+
+.life4 .word .english {
+  height: 16px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 6px;
+  color: #000;
+  position: relative;
+}
+
+.life4 .word .english span {
+  width: 32px;
+  height: 32px;
+  background-color: #4ec8f8;
+  border-radius: 50%;
+  position: absolute;
+  top: -7px;
+  left: -16px;
+  opacity: 0.5;
+}
+
+.life4 .word .title1 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 30px;
+  color: #1f2329;
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+
+.life4 .word .text1 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #646a73;
+}
+
+.life4 .word .title2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 32px;
+  margin-bottom: 8px;
+  color: #1f2329;
+}
+
+.life4 .word .text2 {
+  font-size: 14px;
+  line-height: 28px;
+  color: #646a73;
+  margin-top: 8px;
+}
+
+.life4 .word .title3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 32px;
+  margin-bottom: 8px;
+  color: #1f2329;
+}
+
+.life4 .word .text3 {
+  font-size: 14px;
+  line-height: 28px;
+  color: #646a73;
+  margin-top: 8px;
+}
+
+.life4 .word .title4 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 32px;
+  margin-bottom: 8px;
+  color: #1f2329;
+}
+
+.life4 .word .text4 {
+  font-size: 14px;
+  line-height: 28px;
+  color: #646a73;
+  margin-top: 8px;
+}
+
+.life4 .word .title5 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 32px;
+  margin-bottom: 8px;
+  color: #1f2329;
+}
+
+.life4 .word .text5 {
+  font-size: 14px;
+  line-height: 28px;
+  color: #646a73;
+  margin-top: 8px;
+}
+
+.life4 .photo {
+  width: 500px;
+  height: 438px;
+  background-image: url(../images/bytsDance-img/multicultural-1.jpg);
+  background-size: 100% 100%;
+  float: left;
+  /* margin-top: 56px; */
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-animation: loop 8s linear infinite;
+  animation: loop 8s linear infinite;
+}
+
+.life4 .photo li {
+  width: 642px;
+  height: 563px;
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+.life4 .photo li:nth-child(1) {
+  background-image: url(../images/bytsDance-img/multicultural-1.jpg);
+  background-size: 100% 100%;
+}
+
+.life4 .photo li:nth-child(2) {
+  background-image: url(../images/bytsDance-img/multicultural-2.jpg);
+  background-size: 100% 100%;
+}
+
+.life4 .photo .active {
+  z-index: 6;
+  opacity: 1;
+}
+
+.content .life5 {
+  height: 675px;
+  padding-top: 87px;
+  padding-bottom: 80px;
+  background-color: #fffbfb;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  position: relative;
+}
+
+.life5 .svg5 {
+  color: #e3ecf3;
+  position: absolute;
+  top: -71px;
+  right: 41px;
+}
+
+.life5 .life-content {
+  width: 1200px;
+  height: 675px;
+  margin: 0 auto;
+}
+
+.life5 .word {
+  width: 462px;
+  height: 675px;
+  float: left;
+}
+
+.life5 .word .english {
+  height: 16px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 6px;
+  color: #000;
+  position: relative;
+}
+
+.life5 .word .english span {
+  width: 32px;
+  height: 32px;
+  background-color: #cf5454;
+  border-radius: 50%;
+  position: absolute;
+  top: -7px;
+  left: -16px;
+  opacity: 0.5;
+}
+
+.life5 .word .title1 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 30px;
+  color: #1f2329;
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+
+.life5 .word .text1 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #646a73;
+}
+
+.life5 .word .title2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 32px;
+  margin-bottom: 8px;
+  color: #1f2329;
+}
+
+.life5 .word .text2 {
+  font-size: 14px;
+  line-height: 28px;
+  color: #646a73;
+  margin-top: 8px;
+}
+
+.life5 .word .title3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 32px;
+  margin-bottom: 8px;
+  color: #1f2329;
+}
+
+.life5 .word .text3 {
+  font-size: 14px;
+  line-height: 28px;
+  color: #646a73;
+  margin-top: 8px;
+}
+
+.life5 .word .title4 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 32px;
+  margin-bottom: 8px;
+  color: #1f2329;
+}
+
+.life5 .word .text4 {
+  font-size: 14px;
+  line-height: 28px;
+  color: #646a73;
+  margin-top: 8px;
+}
+
+.life5 .word .title5 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 30px;
+  margin-top: 32px;
+  margin-bottom: 8px;
+  color: #1f2329;
+}
+
+.life5 .word .text5 {
+  font-size: 14px;
+  line-height: 28px;
+  color: #646a73;
+  margin-top: 8px;
+}
+
+.life5 .photo {
+  width: 600px;
+  height: 526px;
+  background-image: url(../images/bytsDance-img/public-welfare-1.jpg);
+  background-size: 100% 100%;
+  float: right;
+  margin-top: 56px;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-animation: loop 8s linear infinite;
+  animation: loop 8s linear infinite;
+}
+
+.life5 .photo li {
+  width: 642px;
+  height: 563px;
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out 0s;
+  -o-transition: all 0.5s ease-in-out 0s;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+.life5 .photo li:nth-child(1) {
+  background-image: url(../images/bytsDance-img/public-welfare-1.jpg);
+  background-size: 100% 100%;
+}
+
+.life5 .photo li:nth-child(2) {
+  background-image: url(../images/bytsDance-img/public-welfare-2.jpg);
+  background-size: 100% 100%;
+}
+
+.life5 .photo li:nth-child(3) {
+  background-image: url(../images/bytsDance-img/public-welfare-3.jpg);
+  background-size: 100% 100%;
+}
+
+.life5 .photo .active {
+  z-index: 6;
+  opacity: 1;
+}
+
+.float-home .backTop .icon {
+  width: 40px;
+  min-height: 40px;
+}
+
+.float-home .icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* 1.0 定义动画 */
+@-webkit-keyframes loop {
+  0% {
+    border-bottom-left-radius: 59%;
+    border-bottom-right-radius: 53%;
+    border-top-left-radius: 63%;
+    border-top-right-radius: 53%;
+  }
+
+  25% {
+    border-bottom-left-radius: 89%;
+    border-bottom-right-radius: 69%;
+    border-top-left-radius: 58%;
+    border-top-right-radius: 65%;
+  }
+
+  50% {
+    border-bottom-left-radius: 61%;
+    border-bottom-right-radius: 81%;
+    border-top-left-radius: 87%;
+    border-top-right-radius: 63%;
+  }
+
+  75% {
+    border-bottom-left-radius: 92%;
+    border-bottom-right-radius: 64%;
+    border-top-left-radius: 56%;
+    border-top-right-radius: 89%;
+  }
+
+  100% {
+    border-bottom-left-radius: 59%;
+    border-bottom-right-radius: 53%;
+    border-top-left-radius: 63%;
+    border-top-right-radius: 53%;
+  }
+}
+
+@keyframes loop {
+  0% {
+    border-bottom-left-radius: 59%;
+    border-bottom-right-radius: 53%;
+    border-top-left-radius: 63%;
+    border-top-right-radius: 53%;
+  }
+
+  25% {
+    border-bottom-left-radius: 89%;
+    border-bottom-right-radius: 69%;
+    border-top-left-radius: 58%;
+    border-top-right-radius: 65%;
+  }
+
+  50% {
+    border-bottom-left-radius: 61%;
+    border-bottom-right-radius: 81%;
+    border-top-left-radius: 87%;
+    border-top-right-radius: 63%;
+  }
+
+  75% {
+    border-bottom-left-radius: 92%;
+    border-bottom-right-radius: 64%;
+    border-top-left-radius: 56%;
+    border-top-right-radius: 89%;
+  }
+
+  100% {
+    border-bottom-left-radius: 59%;
+    border-bottom-right-radius: 53%;
+    border-top-left-radius: 63%;
+    border-top-right-radius: 53%;
+  }
+}

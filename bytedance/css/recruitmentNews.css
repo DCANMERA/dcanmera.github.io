@@ -1,0 +1,916 @@
+@charset "UTF-8";
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+.code .content .title {
+  position: relative;
+  width: 100%;
+}
+
+.main {
+  font-family: -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    PingFang SC,
+    Hiragino Sans GB,
+    Microsoft YaHei,
+    Helvetica Neue,
+    Helvetica,
+    Arial,
+    sans-serif,
+    Apple Color Emoji,
+    Segoe UI Emoji,
+    Segoe UI Symbol;
+}
+
+/*********************** 主体的banner区域样式start ***********************/
+.banner {
+  background: url(../images/recruitmentNews/recruitmentNews-banner.jpg) no-repeat center center/cover;
+  width: 100%;
+  height: 270px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+.banner .banner-con {
+  text-align: center;
+}
+
+.banner-con h2 {
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.banner-con p {
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 5px;
+}
+
+/*********************** 主体的banner区域样式end ***********************/
+/*********************** 主体的tabBar区域样式start ***********************/
+.tabBar {
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid #DDDFE1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+}
+
+.tabBar ul li {
+  display: inline-block;
+  position: relative;
+  bottom: -1px;
+  margin-top: 23px;
+  padding-bottom: 10px;
+  margin-right: 48px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+  color: #1f2329;
+}
+
+.tabBar ul li:last-of-type {
+  margin-right: 0;
+}
+
+.tabBar ul li:hover,
+.tabBar ul li.active {
+  border-bottom: 2px solid #3370ff;
+  color: #3370ff;
+  font-weight: 500;
+}
+
+/*********************** 主体的tabBar区域样式end ***********************/
+/*********************** 主体的内容区域样式start ***********************/
+.main-content {
+  border: 1px solid transparent;
+}
+
+.main-content,
+.main-content .content,
+.main-content .title {
+  position: relative;
+}
+
+.title .onlinePresentation-title .onlinePresentation-title-con,
+.onlinePresentation,
+.qAArea .qAArea-item,
+.qAArea .qAArea-item-footer {
+  width: 896px;
+  margin: auto;
+}
+
+.main-content .title h3 {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+  color: #1f2329;
+}
+
+.title .recruitmentProcess-title h3 {
+  margin: 60px auto 32px;
+}
+
+.title .onlinePresentation-title h3:first-of-type {
+  margin-top: 60px;
+}
+
+.title .onlinePresentation-title h3:last-of-type {
+  margin-top: 12px;
+  margin-bottom: 60px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.onlinePresentation-title h3:last-of-type .icon {
+  margin-left: 24px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 24px;
+  vertical-align: bottom;
+  color: #3370ff;
+  cursor: pointer;
+  position: relative;
+}
+
+.onlinePresentation-title h3:last-of-type .icon svg {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  margin-right: 8px;
+}
+
+.onlinePresentation-title h3:last-of-type .icon>img {
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgba(187, 191, 196, 0.5);
+  border-radius: 10px;
+  margin-right: 8px;
+}
+
+.onlinePresentation-title h3:last-of-type .icon .code {
+  min-width: 0;
+  -webkit-transform: translateX(calc(-50% + 10px));
+  -ms-transform: translateX(calc(-50% + 10px));
+  transform: translateX(calc(-50% + 10px));
+  bottom: unset;
+  top: 30px;
+  -webkit-box-shadow: rgba(31, 35, 41, 0.1) 0px 2px 10px 0px;
+  box-shadow: rgba(31, 35, 41, 0.1) 0px 2px 10px 0px;
+}
+
+.onlinePresentation-title h3:last-of-type .icon .code::before {
+  top: -13px;
+  bottom: unset;
+  border-color: transparent transparent #FFFFFF transparent;
+}
+
+.onlinePresentation-title .code .content {
+  width: 119px;
+  float: none;
+}
+
+.onlinePresentation-title .onlinePresentation-title-con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto 56px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+}
+
+.onlinePresentation-title-con .onlinePresentation-title-con-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.onlinePresentation-title-con-item img {
+  width: 76px;
+  height: 76px;
+}
+
+.onlinePresentation-title-con-item>div {
+  line-height: 25px;
+  font-size: 18px;
+  margin-top: 24px;
+}
+
+.title .qAArea-title h3 {
+  margin: 60px auto 40px;
+}
+
+/*********************** 招聘流程区域样式 ***********************/
+.main-content .recruitmentProcess {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.recruitmentProcess .leftBg,
+.recruitmentProcess .rightBg {
+  position: absolute;
+  top: -70px;
+  width: 70px;
+  height: 286px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 9;
+}
+
+.recruitmentProcess .leftBg {
+  left: 0;
+  background-image: url(../images/recruitmentNews/a8fed7ad4d678f4e8e837bf75ff99d50.png);
+}
+
+.recruitmentProcess .rightBg {
+  right: 0;
+  background-image: url(../images/recruitmentNews/eca3618b9a971ddab867454efc62aee5.png);
+}
+
+.recruitmentProcess .detail {
+  min-width: 992px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 60px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.detail .recruitmentProcess-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  width: 200px;
+  height: 190px;
+}
+
+.detail svg {
+  height: 126px;
+  width: 26px;
+  opacity: .7;
+}
+
+.recruitmentProcess-item img {
+  width: 75.6px;
+  height: 75.6px;
+}
+
+.recruitmentProcess-item .detail-title {
+  margin-top: 22px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: #1f2329;
+}
+
+.recruitmentProcess-item .detail-desc {
+  margin-top: 11px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #646a73;
+  white-space: nowrap;
+}
+
+/*********************** 线上宣讲区域样式 ***********************/
+.main-content .onlinePresentation {
+  position: relative;
+  margin: 0 auto;
+}
+
+.onlinePresentation .onlinePresentation-item {
+  width: 100%;
+  margin-bottom: 32px;
+  padding: 32px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-top: 1px solid #dee0e3;
+}
+
+.onlinePresentation .onlinePresentation-item:first-of-type {
+  border-top: none;
+}
+
+.onlinePresentation .onlinePresentation-item:last-of-type {
+  margin-bottom: 60px;
+}
+
+.onlinePresentation-item .onlinePresentation-item-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-bottom: 24px;
+  position: relative;
+}
+
+.onlinePresentation-item .onlinePresentation-item-head .item-head-left,
+.onlinePresentation-item .onlinePresentation-item-head .item-head-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.item-head-left .item-head-logo {
+  width: 60px;
+  height: 60px;
+  background: #f0f4ff;
+  border-radius: 30px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin-right: 12px;
+}
+
+.item-head-left .item-head-logo img {
+  width: 32px;
+}
+
+.item-head-left>div>h4 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.item-head-left>div>h4 .tip {
+  display: inline-block;
+  color: #0c296e;
+  font-size: 14px;
+  line-height: 24px;
+  background: #e1eaff;
+  border-radius: 2px;
+  font-weight: 400;
+  padding: 0 8px;
+  margin-left: 8px;
+}
+
+.item-head-left>div>h5 {
+  font-size: 14px;
+  color: #646a73;
+  line-height: 24px;
+  margin-top: 4px;
+}
+
+.item-head-right .liveBroadcast-btn {
+  display: inline-block;
+  min-width: 80px;
+  max-width: 120px;
+  height: 40px;
+  line-height: 38px;
+  padding: 0 23px;
+  margin-right: 12px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #3370ff;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-color: #3370ff;
+  border-radius: 20px;
+  position: relative;
+  white-space: nowrap;
+  text-align: center;
+  -webkit-transition: padding 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: padding 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: padding 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+}
+
+.item-head-right .liveBroadcast-btn:hover {
+  opacity: .7;
+}
+
+.item-head-right .icon {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(31, 35, 41, 0.08);
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  position: relative;
+}
+
+.item-head-right .icon:hover {
+  border-color: #3370ff;
+}
+
+.item-head-right .icon:hover svg path {
+  fill: #3370ff;
+}
+
+.item-head-right .icon .code {
+  min-width: 0;
+  -webkit-transform: translateX(calc(-50% + 19px));
+  -ms-transform: translateX(calc(-50% + 19px));
+  transform: translateX(calc(-50% + 19px));
+  bottom: 48px;
+  padding: 15px 15px 15px 20px;
+  -webkit-box-shadow: rgba(31, 35, 41, 0.1) 0px 2px 10px 0px;
+  box-shadow: rgba(31, 35, 41, 0.1) 0px 2px 10px 0px;
+}
+
+.item-head-right .max-width {
+  width: 482px;
+}
+
+.item-head-right .icon .code .content:nth-child(2) {
+  margin: 0 20px;
+}
+
+.onlinePresentation-item>div>table {
+  width: 100%;
+  line-height: 40px;
+}
+
+.onlinePresentation-item>div>table thead tr,
+.onlinePresentation-item>div>table tr:nth-of-type(even) {
+  background-color: #f8f9fa;
+}
+
+.onlinePresentation-item>div>table th,
+.onlinePresentation-item>div>table td {
+  padding: 0 16px;
+  color: #646a73;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    PingFang SC,
+    Hiragino Sans GB,
+    Microsoft YaHei,
+    Helvetica Neue,
+    Helvetica,
+    Arial,
+    sans-serif,
+    Apple Color Emoji,
+    Segoe UI Emoji,
+    Segoe UI Symbol;
+}
+
+.onlinePresentation-item>div>table th:first-of-type,
+.onlinePresentation-item>div>table td:first-of-type {
+  width: 45%;
+}
+
+.onlinePresentation-item>div>table th:last-of-type,
+.onlinePresentation-item>div>table td:last-of-type {
+  text-align: right;
+}
+
+/*********************** 答疑专区区域样式 ***********************/
+.main-content .qAArea {
+  position: relative;
+  overflow: hidden;
+}
+
+.qAArea .qAArea-left-center-bg,
+.qAArea .qAArea-left-bottom-bg,
+.qAArea .qAArea-right-top-bg,
+.qAArea .qAArea-right-center-bg,
+.qAArea .qAArea-right-bottom-bg {
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.qAArea-left-center-bg {
+  top: 1013px;
+  left: 0;
+  width: 213px;
+  height: 230px;
+  background-image: url(../images/recruitmentNews/ccb258481f92db396dcc278facf5cb14.png);
+}
+
+.qAArea-left-bottom-bg {
+  bottom: 429px;
+  left: 0;
+  width: 240px;
+  height: 176px;
+  background-image: url(../images/recruitmentNews/0c6312e892d33284160c67361e390fef.png);
+}
+
+.qAArea-right-top-bg {
+  top: 252px;
+  right: -108px;
+  width: 216px;
+  height: 234px;
+  background-image: url(../images/recruitmentNews/00e865291a31a73e4b54e15745649bc4.png);
+}
+
+.qAArea-right-center-bg {
+  top: 1402px;
+  right: -108px;
+  width: 240px;
+  height: 176px;
+  background-image: url(../images/recruitmentNews/d6fe707aa6fcc2b2195d08bf82e12fbd.png);
+}
+
+.qAArea-right-bottom-bg {
+  bottom: 154px;
+  right: -108px;
+  width: 216px;
+  height: 234px;
+  background-image: url(../images/recruitmentNews/6e2c4b6a30edf3062d5a22d9a75317d6.png);
+}
+
+.qAArea .qAArea-item {
+  position: relative;
+  margin: 0 auto 32px;
+  padding: 35px 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.qAArea-item .qAArea-item-title {
+  position: relative;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 auto;
+  color: #4e83fd;
+}
+
+.qAArea-item .qAArea-item-title::before,
+.qAArea-item .qAArea-item-title::after {
+  position: absolute;
+  top: 4px;
+  width: 19px;
+  height: 19px;
+}
+
+.qAArea-item-title::before {
+  content: url(https://lf3-ppcdn-tos.pstatp.com/obj/atsx-fe-prod/portal/campus/03468aa02dd8fe965169b23d6d833ea3.svg);
+  left: -28px;
+}
+
+.qAArea-item-title::after {
+  content: url(https://lf3-ppcdn-tos.pstatp.com/obj/atsx-fe-prod/portal/campus/6f9b47d90dea347478c52e7043155e4a.svg);
+  right: -28px;
+}
+
+.qAArea-item .qAArea-item-detail {
+  margin-top: 37px;
+}
+
+.qAArea-item-detail .question-and-answer {
+  padding: 24px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+}
+
+.qAArea-item-detail .question-and-answer::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #ccc), color-stop(50%, #ccc), color-stop(0, rgba(0, 0, 0, 0)));
+  background-image: -o-linear-gradient(left, #ccc 0, #ccc 50%, rgba(0, 0, 0, 0) 0);
+  background-image: linear-gradient(90deg, #ccc 0, #ccc 50%, rgba(0, 0, 0, 0) 0);
+  background-size: 8px 1px;
+  background-repeat: repeat-x;
+}
+
+.qAArea-item-detail .question-and-answer:last-of-type::after {
+  content: "";
+  height: 0;
+}
+
+.qAArea-item-detail .question-and-answer:first-of-type {
+  padding-top: unset;
+}
+
+.question-and-answer .question,
+.question-and-answer .answer,
+.question-and-answer .attach {
+  margin-bottom: 16px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #646a73;
+}
+
+.question-and-answer .question {
+  font-size: 16px;
+  color: #1f2329;
+}
+
+.question-and-answer .answer:last-of-type,
+.question-and-answer .attach:last-of-type {
+  margin-bottom: 0;
+}
+
+.question-and-answer .questionandAnswerContent-table {
+  width: 100%;
+  margin-top: 12px;
+  text-align: center;
+}
+
+.questionandAnswerContent-table tr {
+  height: 32px;
+}
+
+.questionandAnswerContent-table tr th {
+  color: #1f2329;
+}
+
+.questionandAnswerContent-table tr td {
+  font-size: 14px;
+  line-height: 24px;
+  color: #646a73;
+}
+
+.qAArea .qAArea-item-footer {
+  position: relative;
+  margin: 0 auto 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 32px 0 32px 40px;
+  background: #f8f9fa;
+}
+
+.qAArea-item-footer .qAArea-item-footer-con {
+  max-width: 635px;
+  margin-right: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.qAArea-item-footer-con .question {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 8px;
+  color: #1f2329;
+}
+
+.qAArea-item-footer-con .answer {
+  font-size: 14px;
+  line-height: 24px;
+  padding-bottom: 16px;
+  color: #1f2329;
+  border-bottom: 1px dashed rgba(187, 191, 196, 0.5);
+}
+
+.qAArea-item-footer-con .more {
+  font-size: 14px;
+  line-height: 24px;
+  padding-top: 16px;
+  color: #646a73;
+}
+
+.qAArea-item-footer .qAArea-item-weChat {
+  -ms-flex-item-align: center;
+  align-self: center;
+  width: 180px;
+  height: 120px;
+  -ms-flex-preferred-size: 180px;
+  flex-basis: 180px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-left: 1px solid rgba(187, 191, 196, 0.5);
+}
+
+.qAArea-item-weChat img {
+  width: 80px;
+}
+
+.qAArea-item-weChat .text {
+  margin-top: 12px;
+  font-size: 12px;
+  color: #646a73;
+}
+
+/*********************** 主体的内容区域样式end ***********************/
+/*********************** 主体的sidebar区域样式start ***********************/
+.sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border-left: 1px solid #dee0e3;
+  position: absolute;
+  top: 0;
+  opacity: 1;
+  z-index: 99;
+  right: calc(50vw + 508px);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.sidebar .sidebar-item {
+  position: relative;
+  left: -1px;
+  border-left: 2px solid rgba(0, 0, 0, 0);
+  margin-bottom: 16px;
+  padding-left: 16px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1f2329;
+}
+
+.sidebar .sidebar-item:last-of-type {
+  margin-bottom: 0;
+}
+
+.sidebar .sidebar-item:hover,
+.sidebar .sidebar-item-active {
+  border-left: 2px solid #3370ff;
+  color: #3370ff;
+  font-weight: 500;
+}
+
+/*********************** 主体的sidebar区域样式end ***********************/
+/*********************** 主体的返回顶部区域样式start ***********************/
+.float-home .backTop {
+  left: 91vw;
+  -webkit-transition: top .0001ms ease-out;
+  -o-transition: top .0001ms ease-out;
+  transition: top .0001ms ease-out;
+  width: 40px;
+}
+
+.float-home .backTop .icon {
+  width: 100%;
+  min-height: 40px;
+}
+
+.float-home .backTop .icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+.float-home .backTop .icon:hover svg {
+  color: #3370ff;
+}
+
+/*********************** 主体的返回顶部区域样式end ***********************/
+/*********************** 响应式区域样式 ***********************/
+@media screen and (max-width: 1060px) {
+
+  .onlinePresentation-title .onlinePresentation-title-con,
+  .main-content .onlinePresentation,
+  .qAArea .qAArea-item,
+  .qAArea .qAArea-item-footer {
+    width: 660px;
+  }
+
+  .sidebar {
+    opacity: 0 !important;
+  }
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1060px) {
+
+  .onlinePresentation-title .onlinePresentation-title-con,
+  .main-content .onlinePresentation,
+  .qAArea .qAArea-item,
+  .qAArea .qAArea-item-footer {
+    width: 62vw;
+    margin-right: calc(35.2vw - 235px);
+  }
+
+  .sidebar {
+    right: calc(97.2vw - 175px);
+  }
+}
+
+@media screen and (min-width: 1441px) {
+  .sidebar {
+    right: calc(50vw + 508px);
+  }
+}

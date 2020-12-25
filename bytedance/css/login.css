@@ -1,0 +1,529 @@
+@charset "UTF-8";
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+.layout {
+  font-weight: 400;
+  border: 1px solid transparent;
+}
+
+.main-content {
+  min-height: calc(100vh - 316px);
+  -webkit-box-flex: 1;
+  -ms-flex: auto;
+  flex: auto;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.loginwrapper {
+  min-height: 600px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.loginpage {
+  min-height: 600px;
+}
+
+.loginpage-container {
+  min-height: 600px;
+  width: 520px;
+  margin: 0 auto;
+}
+
+.headertop {
+  margin-top: 80px;
+  height: 41px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.headertop>div {
+  margin-right: 46px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 41px;
+  position: relative;
+}
+
+.phonelogin {
+  color: #3370ff;
+  cursor: pointer;
+}
+
+.emaillogin {
+  color: #8f959e;
+  cursor: pointer;
+}
+
+.emaillogin:hover {
+  color: #3370FF;
+}
+
+.emaillogin::after,
+.phonelogin::after {
+  content: " ";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  border-radius: 3px;
+  background-color: #3370ff;
+  opacity: 0;
+}
+
+.mobielogin,
+.emailogin {
+  width: 100%;
+  margin: 40px auto 45px;
+}
+
+.mobiecontainer {
+  height: 142px;
+  margin-bottom: 32px;
+}
+
+.phonenumber {
+  width: 100%;
+  height: 42px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+
+.phoneselect {
+  width: 25%;
+  height: 40px;
+  float: left;
+  position: relative;
+  cursor: pointer;
+  border: 1px solid #cccccc;
+  border-right: none;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  text-indent: 1em;
+}
+
+.phoneselect:hover {
+  border-color: #3370FF;
+}
+
+.phoneselect:hover~.phonenum input {
+  border-left-color: #3370FF;
+}
+
+.selectbox {
+  position: absolute;
+  left: 0;
+  top: 45px;
+  width: 300px;
+  height: 200px;
+  display: none;
+  background-color: white;
+  -webkit-box-shadow: -5px 3px 14px #cccccc;
+  box-shadow: -5px 3px 14px #cccccc;
+  -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+
+.leftselect {
+  width: 100%;
+  height: 100%;
+}
+
+.leftselect ul {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow-y: scroll;
+}
+
+.leftselect ul li {
+  width: 100%;
+  font-size: 14px;
+  white-space: nowrap;
+  text-align: left;
+  color: #1F2329;
+}
+
+.leftselect ul li:first-of-type {
+  color: #B3B7BD;
+  border-bottom: 1px solid #d4d5d6;
+  font-size: 14px;
+  margin: 0;
+}
+
+.leftselect li.active {
+  color: #3370FF;
+}
+
+.leftselect li:hover {
+  background-color: #F9FAFD;
+}
+
+.rightscroll {
+  width: 5%;
+  height: 100%;
+  float: left;
+  background-color: #F1F1F1;
+  position: relative;
+}
+
+.rightscroll .scrollt {
+  display: block;
+  width: 95%;
+  height: 20px;
+  background-color: #C1C1C1;
+  position: absolute;
+  top: 0;
+}
+
+.fugai {
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  position: absolute;
+}
+
+.phonenum {
+  width: 75%;
+  height: 40px;
+  float: left;
+}
+
+.phonenum input {
+  width: 100%;
+  height: 100%;
+  text-indent: 1em;
+  display: block;
+  border: 1px solid #cccccc;
+  border-left: 1px solid #cccccc;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.plone-icon {
+  position: absolute;
+  right: 10%;
+  top: 30%;
+  cursor: pointer;
+}
+
+.checknum {
+  width: 100%;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+
+.checkinput {
+  width: 75%;
+  border: 1px solid #cccccc;
+  text-indent: 1em;
+  float: left;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  border-right: none;
+}
+
+.checknum .sendnum {
+  width: 25%;
+  border: none;
+  float: left;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  background-color: #3370FF;
+  border: 1px solid #3370FF;
+  color: white;
+  cursor: not-allowed;
+  opacity: .4;
+}
+
+.loginbtn {
+  width: 100%;
+  height: 40px;
+  color: white;
+  background-color: #3370FF;
+  border-radius: 50px;
+}
+
+.loginbtn:hover {
+  opacity: .4;
+}
+
+.loginbtn:active {
+  opacity: 1;
+}
+
+.mobileLoginTip {
+  line-height: 22px;
+  color: #8f959e;
+  font-size: 14px;
+  text-align: left;
+  margin: 12px 0 64px;
+  font-weight: 400;
+}
+
+.thirdPartyLogin {
+  margin-bottom: 36px;
+  font-weight: 400;
+}
+
+.thirdPartyLogin-text {
+  color: #8f959e;
+  font-weight: 500;
+  padding-top: 24px;
+  border-top: 1px solid #eff1f1;
+  line-height: 22px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.thirdPartyLogin-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 16px;
+  position: relative;
+}
+
+.thirdPartyLogin-icons a {
+  width: 40px;
+  height: 40px;
+  margin: 0 16px;
+  cursor: pointer;
+}
+
+.wechat {
+  color: #2EA121;
+}
+
+.wechat:hover {
+  color: #227818;
+}
+
+.wechat:hover~.code {
+  display: block;
+}
+
+.facebook {
+  color: #3C5A9A;
+}
+
+.facebook:hover {
+  color: #2C4373;
+}
+
+.in {
+  color: #1D87BD;
+}
+
+.in:hover {
+  color: #15658D;
+}
+
+.loginAgreement {
+  color: #8f959e;
+  margin-top: 26px;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.loginAgreement a {
+  color: #3370ff;
+  cursor: pointer;
+}
+
+.loginAgreement a:hover {
+  color: #82A7FC;
+}
+
+.thirdPartyLogin .code {
+  min-width: 120px;
+  display: none;
+  left: 170px;
+  bottom: 50px;
+  text-align: center;
+  -webkit-box-shadow: rgba(31, 35, 41, 0.1) 0px 2px 10px 0px;
+  box-shadow: rgba(31, 35, 41, 0.1) 0px 2px 10px 0px;
+}
+
+.thirdPartyLogin .code img {
+  width: 100px;
+  height: 100px;
+  margin-right: 0;
+}
+
+.emailcontainer {
+  height: 142px;
+  margin-bottom: 32px;
+  position: relative;
+}
+
+.emailcontainer input {
+  height: 40px;
+  width: 100%;
+  border: 1px solid #cccccc;
+  border-radius: 50px;
+  text-indent: 1em;
+  margin-bottom: 30px;
+}
+
+.emailLogin-noAccount {
+  color: #8f959e;
+  line-height: 16px;
+  font-size: 14px;
+  text-align: left;
+  margin: 12px 0 70px;
+}
+
+.pwdinp {
+  position: relative;
+}
+
+.password-showPwd {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  right: 20px;
+  top: 7px;
+  color: #646a73;
+  cursor: pointer;
+}
+
+.password-showPwd:hover {
+  color: #3370ff;
+}
+
+.emailLogin-forgetPassword {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  line-height: 22px;
+  text-align: right;
+  font-size: 14px;
+}
+
+.emailogin {
+  display: none;
+}
+
+.openEye {
+  display: none;
+}
+
+.emailinp input:hover,
+.emailinp input:focus,
+.phonenum input:hover,
+.phonenum input:focus,
+.checkinput:hover,
+.checkinput:focus,
+.pwdinp input:hover,
+.pwdinp input:focus {
+  border-color: #3370FF;
+}
+
+.useragreebox {
+  display: none;
+}
+
+.modalbg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(31, 35, 41, 0.5);
+  -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.modal-dialog {
+  z-index: 1000;
+}
+
+.modal-dialog .modal-content {
+  max-height: calc(90vh - 3.5rem);
+  border: none;
+  -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.modal-dialog {
+  max-width: 600px;
+  margin: 3.75rem auto;
+}
+
+.btn-primary {
+  border-radius: 20px;
+  width: 80px;
+  height: 32px;
+  line-height: 19px;
+  font-size: 14px;
+  text-align: center;
+  outline: none;
+  background: #3370FF;
+}
+
+.btn-primary:hover {
+  opacity: .6;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-footer {
+  border-top: none;
+}
+
+.modal-header .modal-title {
+  color: #1f2329;
+  font-weight: 600;
+}
+
+.rulePage {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+}
+
+.modal-body {
+  padding: 12px 32px;
+}
+
+.rulePage-section {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 32px;
+}
+
+.daoyan {
+  margin-top: 0;
+}
+
+.rulePage-cotent {
+  font-size: 16px;
+  font-weight: 300;
+}

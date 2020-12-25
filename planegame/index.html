@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge,chrome=1" />
+    <meta name="renderer"
+          content="webkit" />
+    <meta name="description"
+          content="" />
+    <meta name="keyword"
+          content="" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes shrink-to-fit=no" />
+    <meta name="author"
+          content="DCanmera" />
+    <title>飞机大战</title>
+    <link rel="shortcut icon"
+          href="favicon.ico"
+          type="image/x-icon">
+    <link rel="stylesheet"
+          href="./css/plane.css" />
+  </head>
+
+  <body>
+
+    <div id="plane"
+         class="plane">
+
+      <view id="start"
+            class="start">
+        <view id="begin"
+              class="begin">开始游戏</view>
+      </view>
+
+      <view id="game"
+            class="game">
+
+
+
+        <!-- 背景 -->
+        <view class="bg bg1"></view>
+        <view class="bg bg2"></view>
+
+        <!-- 我方飞机 -->
+        <view id="myplane"
+              class="myplane">
+          <img class="auto-img"
+               src="./images/plane.gif" />
+        </view>
+
+        <view id="layer"
+              class="layer">
+
+          <!-- 得分 -->
+          <view id="goal">
+            <span>得分：0</span>
+          </view>
+        </view>
+
+      </view>
+
+    </div>
+
+    <script src="./js/plane.js"></script>
+  </body>
+
+</html>

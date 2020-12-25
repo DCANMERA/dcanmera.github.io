@@ -1,0 +1,60 @@
+/*初始化要样式开始*/
+*{
+	padding: 0;
+	margin: 0;
+}
+ul,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #464646;
+}
+a:hover{
+	color: #ff4e00;
+}
+body{
+	font-size:14px;
+	font-family: 微软雅黑;
+	min-width: 1280px;
+}
+/*左浮*/
+.fl{
+	float: left;
+}
+/*右浮*/
+.fr{
+	float: right;
+}
+/*清除浮动*/
+.clearfix::after{
+	content:'.';
+	display: block;
+	height: 0;
+	line-height: 0px;
+	clear:both;
+	visibility: hidden;
+    overflow: hidden;
+}
+.clearfix{
+	*zoom: 1;
+}
+/*设置图片下边框无间隙*/
+img{
+	vertical-align: bottom;
+}
+/*去除标题标签加粗效果*/
+h1,h2,h3,h4,h5,h6{
+	font-weight: normal;
+}
+input{
+	border:none;
+	outline:none;
+}
+/*初始化要样式结束*/
+
+/*版心*/
+.w{
+	width: 1200px;
+	margin: 0 auto;
+}

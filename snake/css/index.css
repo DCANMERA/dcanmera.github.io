@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: lemonchiffon;
+}
+
+.w {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.fr {
+  color: red;
+  font-size: 22px;
+  float: right;
+}
+
+.game {
+  text-align: center;
+}
+
+.header {
+  margin-top: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.header button {
+  float: left;
+  width: 80px;
+  height: 30px;
+  outline: none;
+  color: #000000;
+  margin-right: 5px;
+  background-color: springgreen;
+  border: 1px solid springgreen;
+  cursor: pointer;
+}
+
+.header button:hover {
+  background-color: #FFFFFF;
+}
+
+#canvas {
+  margin-top: 20px;
+  background-color: gray;
+}
