@@ -20,7 +20,7 @@
 
 因个人号无法发布该类型小程序，故以体验版展示
 
-<img src="dragonfly/dragonfly.jpg" alt="微信小程序体验码" style="width:100px;height:100px;float:left;" />
+<img src="dragonfly/dragonfly.jpg" alt="微信小程序体验码" style="width:100px;height:100px;" />
 
 ## 3、仿字节跳动校园招聘
 
