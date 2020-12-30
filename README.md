@@ -20,7 +20,7 @@
 
 因个人号无法发布该类型小程序，故以体验版展示
 
-!+[]+(/dragonfly/dragonfly.jpg)
+![test image size](/dragonfly/dragonfly.jpg){:height="100" width="100"}
 
 ## 3、仿字节跳动校园招聘
 
