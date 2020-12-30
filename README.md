@@ -19,7 +19,7 @@
 #### 使用技术：JavaScript、云函数、云数据库、云存储、JSON、WXSS、WXML、小程序 API、ES6
 
 因个人号无法发布该类型小程序，故以体验版展示
-<img src="/dragonfly/dragonfly.png" />
+<img src="/dragonfly/dragonfly.jpg" />
 
 ## 3、仿字节跳动校园招聘
 
